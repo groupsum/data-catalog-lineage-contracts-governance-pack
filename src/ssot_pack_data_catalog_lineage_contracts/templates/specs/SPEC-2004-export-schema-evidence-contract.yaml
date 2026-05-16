@@ -1,0 +1,40 @@
+{
+  "id": "spc:export-schema-evidence-contract",
+  "number": 2004,
+  "slug": "export-schema-evidence-contract",
+  "title": "Export Schema Evidence Contract",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "pack": "pack:data-catalog-lineage-contracts",
+  "scope": {
+    "governs": "Data Catalog, Lineage, And Analytics Contracts",
+    "excludes": [
+      "Other governance packs",
+      "Downstream implementation-specific conformance claims",
+      "Repository-specific feature, claim, test, evidence, boundary, and release rows"
+    ]
+  },
+  "authority_sources": [
+    "W3C DCAT v3",
+    "JSON Schema 2020-12",
+    "OpenLineage specification",
+    "CloudEvents",
+    "GA4 BigQuery Export schema"
+  ],
+  "requirements": [
+    "Treat Data Catalog, Lineage, And Analytics Contracts as the only governed domain for this pack.",
+    "Do not cross-link this pack to other governance packs.",
+    "Use packaged ADR and SPEC documents as immutable authority inputs for downstream SSOT synchronization.",
+    "Create downstream features, claims, tests, evidence, risks, boundaries, and releases outside the pack metadata lifecycle."
+  ],
+  "notes": [
+    "This document was seeded from digital-analytics-customer-data-collection-sources.md.",
+    "This pack intentionally does not refer to sibling governance packs."
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:data-catalog-lineage-boundary",
+    "adr:analytics-contract-evidence-lineage"
+  ]
+}

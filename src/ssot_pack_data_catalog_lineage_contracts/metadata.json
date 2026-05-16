@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_package_name": "ssot-pack-data-catalog-lineage-contracts",
+  "origin": {
+    "id": "pack:data-catalog-lineage-contracts",
+    "package_name": "ssot-pack-data-catalog-lineage-contracts",
+    "import_name": "ssot_pack_data_catalog_lineage_contracts",
+    "kind": "governance-pack",
+    "title": "Data Catalog, Lineage, And Analytics Contracts",
+    "description": "Installable SSOT governance pack for data catalogs, analytics schemas, dataset metadata, lineage, export schemas, and evidence traceability.",
+    "homepage": "https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack",
+    "repository": "https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack"
+  },
+  "compatibility": {
+    "python": ">=3.10,<3.15",
+    "ssot_registry_schema": ">=0.4.0",
+    "ssot_pack_contract": ">=0.2.17,<0.3.0"
+  },
+  "trust": {
+    "trusted_by_default": false,
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-data-catalog-lineage-contracts"
+  },
+  "documents": {
+    "adr": {
+      "manifest_path": "templates/adr/manifest.json"
+    },
+    "spec": {
+      "manifest_path": "templates/specs/manifest.json"
+    }
+  }
+}

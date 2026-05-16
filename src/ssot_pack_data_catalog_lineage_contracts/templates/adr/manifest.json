@@ -1,0 +1,38 @@
+[
+  {
+    "id": "adr:data-catalog-lineage-boundary",
+    "number": 1001,
+    "slug": "data-catalog-lineage-boundary",
+    "title": "Data Catalog Lineage Boundary",
+    "filename": "ADR-1001-data-catalog-lineage-boundary.yaml",
+    "target_path": ".ssot/adr/ADR-1001-data-catalog-lineage-boundary.yaml",
+    "sha256": "5c4371877e6285c7c8d719ed585bf5c9cc6da9d82b7d51c7c6e465c8168bf7e2",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-data-catalog-lineage-contracts",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  },
+  {
+    "id": "adr:analytics-contract-evidence-lineage",
+    "number": 1002,
+    "slug": "analytics-contract-evidence-lineage",
+    "title": "Analytics Contract Evidence Lineage",
+    "filename": "ADR-1002-analytics-contract-evidence-lineage.yaml",
+    "target_path": ".ssot/adr/ADR-1002-analytics-contract-evidence-lineage.yaml",
+    "sha256": "7105709bb31d12ddb910dc8d3842893506ad3b2df521239e6f36ad864b4b6122",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-data-catalog-lineage-contracts",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  }
+]
