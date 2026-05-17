@@ -1,0 +1,34 @@
+{
+  "id": "spc:dcat-dataset-metadata-requirements",
+  "number": 2001,
+  "slug": "dcat-dataset-metadata-requirements",
+  "title": "DCAT Dataset Metadata Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream dataset metadata records represented with DCAT.",
+    "excludes": [
+      "JSON payload validation internals",
+      "Pipeline execution orchestration",
+      "Customer identity profile modeling"
+    ]
+  },
+  "authority_sources": [
+    "W3C DCAT v3"
+  ],
+  "requirements": [
+    "Validate dataset identifiers, titles, descriptions, themes, keywords, contacts, rights, temporal metadata, spatial metadata, and provenance metadata selected by downstream policy.",
+    "Retain DCAT source snapshots and catalog validation outputs for dataset records.",
+    "Flag missing or inconsistent required dataset metadata before dataset publication or evidence use."
+  ],
+  "verification": [
+    "DCAT dataset fixture validation tests",
+    "required metadata failure-path tests",
+    "catalog evidence retention tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:dcat-dataset-catalog-metadata-policy"
+  ]
+}

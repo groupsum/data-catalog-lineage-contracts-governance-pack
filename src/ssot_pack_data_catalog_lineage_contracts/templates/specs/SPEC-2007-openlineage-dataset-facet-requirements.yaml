@@ -1,0 +1,34 @@
+{
+  "id": "spc:openlineage-dataset-facet-requirements",
+  "number": 2007,
+  "slug": "openlineage-dataset-facet-requirements",
+  "title": "OpenLineage Dataset Facet Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream OpenLineage dataset namespaces, names, schema facets, data source facets, lifecycle facets, and custom facet handling.",
+    "excludes": [
+      "DCAT catalog descriptive fields unless linked by downstream policy",
+      "JSON payload validation",
+      "Warehouse optimization metadata"
+    ]
+  },
+  "authority_sources": [
+    "OpenLineage specification"
+  ],
+  "requirements": [
+    "Validate dataset namespace, dataset name, schema facets, data source facets, lifecycle facets, and selected custom facets.",
+    "Link input and output dataset facets to run events and downstream catalog or schema evidence where applicable.",
+    "Retain facet validation outputs and rejected facet evidence."
+  ],
+  "verification": [
+    "dataset facet validation tests",
+    "input/output dataset linkage tests",
+    "custom facet handling tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:openlineage-job-run-lineage-policy"
+  ]
+}

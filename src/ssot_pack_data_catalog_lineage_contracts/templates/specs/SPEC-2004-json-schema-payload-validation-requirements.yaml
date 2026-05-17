@@ -1,0 +1,34 @@
+{
+  "id": "spc:json-schema-payload-validation-requirements",
+  "number": 2004,
+  "slug": "json-schema-payload-validation-requirements",
+  "title": "JSON Schema Payload Validation Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream validation of analytics payloads and export records against JSON Schema contracts.",
+    "excludes": [
+      "Catalog descriptive metadata",
+      "Lineage event capture",
+      "Dashboard rendering"
+    ]
+  },
+  "authority_sources": [
+    "JSON Schema 2020-12"
+  ],
+  "requirements": [
+    "Validate required properties, types, constraints, nested structures, arrays, enums, and unevaluated fields selected by downstream schemas.",
+    "Reject, quarantine, or flag invalid payloads before they contribute to governed exports or claims.",
+    "Retain accepted and rejected fixture outputs with validation reports."
+  ],
+  "verification": [
+    "valid payload fixture tests",
+    "invalid payload failure-path tests",
+    "validation report evidence tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:json-schema-analytics-contract-policy"
+  ]
+}

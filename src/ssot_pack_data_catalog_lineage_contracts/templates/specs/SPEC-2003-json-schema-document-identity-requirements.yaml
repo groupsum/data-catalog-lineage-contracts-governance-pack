@@ -1,0 +1,34 @@
+{
+  "id": "spc:json-schema-document-identity-requirements",
+  "number": 2003,
+  "slug": "json-schema-document-identity-requirements",
+  "title": "JSON Schema Document Identity Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream JSON Schema document identity for analytics payload and export contracts.",
+    "excludes": [
+      "Non-JSON contract languages unless selected downstream",
+      "Dataset catalog metadata",
+      "Runtime lineage events"
+    ]
+  },
+  "authority_sources": [
+    "JSON Schema 2020-12"
+  ],
+  "requirements": [
+    "Validate $schema, $id, schema version, title, description, and canonical schema identity for governed JSON Schema documents.",
+    "Use stable schema identifiers for payload validation, export validation, compatibility checks, and evidence references.",
+    "Retain schema snapshots and identity validation outputs."
+  ],
+  "verification": [
+    "schema identity validation tests",
+    "$schema and $id failure-path tests",
+    "schema snapshot evidence tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:json-schema-analytics-contract-policy"
+  ]
+}

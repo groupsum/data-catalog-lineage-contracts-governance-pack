@@ -32,15 +32,15 @@ class GovernancePackManifestTests(unittest.TestCase):
         manifest = load_pack_manifest()
         self.assertEqual("ssot-pack-data-catalog-lineage-contracts", manifest["metadata"]["origin"]["package_name"])
         self.assertEqual(8, len(manifest["documents"]["adr"]))
-        self.assertEqual(4, len(manifest["documents"]["spec"]))
+        self.assertEqual(12, len(manifest["documents"]["spec"]))
 
     def test_packaged_documents_are_readable(self) -> None:
         adr_manifest = load_document_manifest("adr")
         spec_manifest = load_document_manifest("spec")
         self.assertEqual("adr:dcat-dataset-catalog-metadata-policy", adr_manifest[0]["id"])
-        self.assertEqual("spc:json-schema-analytics-contract", spec_manifest[0]["id"])
+        self.assertEqual("spc:dcat-dataset-metadata-requirements", spec_manifest[0]["id"])
         self.assertIn("DCAT Dataset Catalog Metadata Policy", read_packaged_document_text("adr", adr_manifest[0]["filename"]))
-        self.assertIn("Data Catalog, Lineage, And Analytics Contracts", read_packaged_document_text("spec", spec_manifest[0]["filename"]))
+        self.assertIn("DCAT Dataset Metadata Requirements", read_packaged_document_text("spec", spec_manifest[0]["filename"]))
 
     def test_packaged_adr_documents_are_downstream_portable(self) -> None:
         forbidden_terms = (
@@ -52,6 +52,19 @@ class GovernancePackManifestTests(unittest.TestCase):
         )
         for entry in load_document_manifest("adr"):
             text = read_packaged_document_text("adr", entry["filename"])
+            for term in forbidden_terms:
+                self.assertNotIn(term, text)
+
+    def test_packaged_spec_documents_are_downstream_portable(self) -> None:
+        forbidden_terms = (
+            "pack:",
+            "This pack",
+            "extension-pack",
+            "governance-pack",
+            "ssot-pack",
+        )
+        for entry in load_document_manifest("spec"):
+            text = read_packaged_document_text("spec", entry["filename"])
             for term in forbidden_terms:
                 self.assertNotIn(term, text)
 

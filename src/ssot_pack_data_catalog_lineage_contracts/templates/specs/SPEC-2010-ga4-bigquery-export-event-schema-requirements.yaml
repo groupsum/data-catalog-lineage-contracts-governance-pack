@@ -1,0 +1,34 @@
+{
+  "id": "spc:ga4-bigquery-export-event-schema-requirements",
+  "number": 2010,
+  "slug": "ga4-bigquery-export-event-schema-requirements",
+  "title": "GA4 BigQuery Export Event Schema Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream GA4 BigQuery export event tables, event records, event parameters, user properties, ecommerce fields, and date/table structure.",
+    "excludes": [
+      "GA4 collection tag configuration",
+      "Non-GA4 warehouse schemas",
+      "Marketing attribution model selection"
+    ]
+  },
+  "authority_sources": [
+    "GA4 BigQuery Export schema"
+  ],
+  "requirements": [
+    "Validate GA4 export event rows, event parameters, user properties, ecommerce fields, traffic source fields, and table/date structure selected by downstream policy.",
+    "Retain export samples, schema mappings, and validation outputs for GA4 export claims.",
+    "Represent unknown, deprecated, or changed GA4 export fields explicitly."
+  ],
+  "verification": [
+    "GA4 export schema fixture tests",
+    "event parameter and user property validation tests",
+    "field change handling tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:ga4-bigquery-export-schema-policy"
+  ]
+}

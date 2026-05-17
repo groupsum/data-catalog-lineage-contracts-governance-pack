@@ -1,0 +1,38 @@
+{
+  "id": "spc:data-contract-lineage-audit-evidence-requirements",
+  "number": 2012,
+  "slug": "data-contract-lineage-audit-evidence-requirements",
+  "title": "Data Contract Lineage Audit Evidence Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream audit evidence retained for data catalogs, schema contracts, event envelopes, lineage events, export samples, and validation reports.",
+    "excludes": [
+      "Non-data-contract operational logs",
+      "Customer identity evidence",
+      "Financial audit evidence unless selected downstream"
+    ]
+  },
+  "authority_sources": [
+    "W3C DCAT v3",
+    "JSON Schema 2020-12",
+    "OpenLineage specification",
+    "CloudEvents",
+    "GA4 BigQuery Export schema"
+  ],
+  "requirements": [
+    "Retain schema snapshots, catalog records, lineage events, CloudEvents fixtures, export samples, validation reports, reconciliation reports, and content hashes.",
+    "Link evidence artifacts to the catalog, schema, lineage, envelope, export, validation, and claim they substantiate.",
+    "Preserve evidence immutability or content hashes for audit-sensitive artifacts."
+  ],
+  "verification": [
+    "evidence inventory tests",
+    "claim-to-evidence linkage checks",
+    "content hash or immutability checks for audit artifacts"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:data-contract-audit-evidence-policy"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "spc:openlineage-run-event-requirements",
+  "number": 2006,
+  "slug": "openlineage-run-event-requirements",
+  "title": "OpenLineage Run Event Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream OpenLineage run event structure and processing lineage evidence.",
+    "excludes": [
+      "Pipeline scheduler implementation",
+      "Catalog descriptive metadata except linked datasets",
+      "Business metric definitions"
+    ]
+  },
+  "authority_sources": [
+    "OpenLineage specification"
+  ],
+  "requirements": [
+    "Validate run event structure, event time, producer, schema URL, job, run, inputs, outputs, and facets selected by downstream policy.",
+    "Retain lineage events for processing runs that support governed analytics exports or claims.",
+    "Flag missing or malformed lineage events when downstream claims depend on processing lineage."
+  ],
+  "verification": [
+    "OpenLineage run event fixture tests",
+    "missing run metadata failure-path tests",
+    "lineage evidence retention tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:openlineage-job-run-lineage-policy"
+  ]
+}

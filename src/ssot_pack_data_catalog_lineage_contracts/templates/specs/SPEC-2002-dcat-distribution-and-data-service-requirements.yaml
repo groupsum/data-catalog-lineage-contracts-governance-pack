@@ -1,0 +1,34 @@
+{
+  "id": "spc:dcat-distribution-and-data-service-requirements",
+  "number": 2002,
+  "slug": "dcat-distribution-and-data-service-requirements",
+  "title": "DCAT Distribution And Data Service Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream DCAT distribution, access, media type, format, data service, and access metadata.",
+    "excludes": [
+      "Payload-level JSON validation",
+      "Warehouse-specific optimization",
+      "Pipeline run lineage"
+    ]
+  },
+  "authority_sources": [
+    "W3C DCAT v3"
+  ],
+  "requirements": [
+    "Validate distribution access URLs, download URLs, media types, formats, byte sizes, access services, and data service metadata selected by downstream policy.",
+    "Link distributions and data services to their parent dataset records.",
+    "Retain distribution and data service validation outputs as catalog evidence."
+  ],
+  "verification": [
+    "DCAT distribution validation tests",
+    "dataset-to-distribution linkage tests",
+    "data service metadata validation tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:dcat-dataset-catalog-metadata-policy"
+  ]
+}

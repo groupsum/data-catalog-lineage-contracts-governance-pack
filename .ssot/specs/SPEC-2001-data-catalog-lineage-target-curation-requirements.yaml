@@ -1,0 +1,28 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2001"
+number: 2001
+slug: "data-catalog-lineage-target-curation-requirements"
+title: "Data Catalog Lineage Target Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "This repository must curate data catalog, lineage, analytics contract, event envelope, and export-schema targets only when they define dataset metadata, distribution metadata, data service metadata, JSON validation contracts, processing lineage, event envelope metadata, vendor export schemas, reconciliation, or audit evidence expectations."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Requirements
+  
+  This repository must curate data catalog, lineage, analytics contract, event envelope, and export-schema targets only when they define dataset metadata, distribution metadata, data service metadata, JSON validation contracts, processing lineage, event envelope metadata, vendor export schemas, reconciliation, or audit evidence expectations.
+  
+  Each curated target must record the authority owner, source title, source type, governed catalog or lineage capability, and version or publication date when available.
+  
+  The curated target set must include W3C DCAT v3, JSON Schema 2020-12, OpenLineage, CloudEvents core/JSON/HTTP materials, and GA4 BigQuery Export schema.
+  
+  ## Exclusions
+  
+  The curation surface excludes product analytics collection APIs, customer identity schemas, consent records, advertising measurement standards, and unrelated governance mechanics unless used only as contextual input for catalog, lineage, schema, or export evidence targets.
+spec_kind: "governance"

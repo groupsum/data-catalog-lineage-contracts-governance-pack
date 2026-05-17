@@ -1,0 +1,24 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2002"
+number: 2002
+slug: "dcat-dataset-catalog-target-requirements"
+title: "DCAT Dataset Catalog Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "DCAT targets must be curated as dataset catalog, distribution, data service, rights, contact, provenance, access, and descriptive metadata surfaces. Source curation must keep catalog metadata targets separate from schema validation and runtime lineage targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Requirements
+  
+  DCAT targets must be curated as dataset catalog, distribution, data service, rights, contact, provenance, access, and descriptive metadata surfaces. Source curation must keep catalog metadata targets separate from schema validation and runtime lineage targets.
+  
+  ## Evidence
+  
+  The repository must retain target metadata that justifies downstream templates for dataset metadata, distribution metadata, data service metadata, rights metadata, and catalog validation evidence.
+spec_kind: "governance"

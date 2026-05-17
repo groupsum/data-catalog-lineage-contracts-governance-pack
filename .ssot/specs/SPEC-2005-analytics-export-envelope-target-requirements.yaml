@@ -1,0 +1,26 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2005"
+number: 2005
+slug: "analytics-export-envelope-target-requirements"
+title: "Analytics Export Envelope Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Analytics export envelope targets must cover CloudEvents core attributes, CloudEvents JSON format, CloudEvents HTTP binding, GA4 BigQuery event export fields, export table/date structure, reconciliation between schema/catalog/lineage/export evidence, and retained audit artifacts."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Requirements
+  
+  Analytics export envelope targets must cover CloudEvents core attributes, CloudEvents JSON format, CloudEvents HTTP binding, GA4 BigQuery event export fields, export table/date structure, reconciliation between schema/catalog/lineage/export evidence, and retained audit artifacts.
+  
+  The repository must keep these targets implementation-neutral except where a target is explicitly vendor-specific, such as GA4 BigQuery Export schema.
+  
+  ## Evidence
+  
+  Downstream templates must identify evidence artifacts required to substantiate event envelope conformance, GA4 export schema conformance, export reconciliation, and data-contract audit claims.
+spec_kind: "governance"

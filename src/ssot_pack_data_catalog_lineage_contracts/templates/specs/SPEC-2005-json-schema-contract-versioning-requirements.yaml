@@ -1,0 +1,34 @@
+{
+  "id": "spc:json-schema-contract-versioning-requirements",
+  "number": 2005,
+  "slug": "json-schema-contract-versioning-requirements",
+  "title": "JSON Schema Contract Versioning Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream compatibility, deprecation, migration notes, and versioned schema references for JSON Schema analytics contracts.",
+    "excludes": [
+      "Pipeline scheduling",
+      "Catalog ownership workflows",
+      "Non-schema semantic metric definitions"
+    ]
+  },
+  "authority_sources": [
+    "JSON Schema 2020-12"
+  ],
+  "requirements": [
+    "Represent schema versions, compatibility decisions, deprecations, breaking changes, migration notes, and versioned references explicitly.",
+    "Run compatibility checks before replacing or promoting governed schemas.",
+    "Retain compatibility reports and migration evidence."
+  ],
+  "verification": [
+    "schema compatibility tests",
+    "breaking change detection tests",
+    "migration evidence retention tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:json-schema-compatibility-and-versioning-policy"
+  ]
+}

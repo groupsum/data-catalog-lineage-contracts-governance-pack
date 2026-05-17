@@ -1,0 +1,35 @@
+{
+  "id": "spc:cloudevents-json-http-binding-requirements",
+  "number": 2009,
+  "slug": "cloudevents-json-http-binding-requirements",
+  "title": "CloudEvents JSON HTTP Binding Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream CloudEvents JSON event format and HTTP structured, binary, or batched transport handling.",
+    "excludes": [
+      "Non-HTTP transports unless selected downstream",
+      "Business event taxonomy",
+      "Warehouse export schemas"
+    ]
+  },
+  "authority_sources": [
+    "CloudEvents JSON event format",
+    "CloudEvents HTTP protocol binding"
+  ],
+  "requirements": [
+    "Validate JSON event format and downstream-selected HTTP structured, binary, or batched content modes.",
+    "Preserve event data and metadata consistently across accepted HTTP binding modes.",
+    "Retain HTTP request/response examples and validation outputs."
+  ],
+  "verification": [
+    "CloudEvents JSON format tests",
+    "HTTP structured and binary mode tests",
+    "batched mode handling tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:cloudevents-analytics-envelope-policy"
+  ]
+}

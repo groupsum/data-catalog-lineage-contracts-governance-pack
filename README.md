@@ -38,10 +38,18 @@ Data Catalog, Lineage, And Analytics Contracts
 
 ## Included SPECs
 
-- `spc:json-schema-analytics-contract` - JSON Schema Analytics Contract
-- `spc:dcat-dataset-contract` - DCAT Dataset Contract
-- `spc:openlineage-processing-contract` - OpenLineage Processing Contract
-- `spc:export-schema-evidence-contract` - Export Schema Evidence Contract
+- `spc:dcat-dataset-metadata-requirements` - DCAT Dataset Metadata Requirements
+- `spc:dcat-distribution-and-data-service-requirements` - DCAT Distribution And Data Service Requirements
+- `spc:json-schema-document-identity-requirements` - JSON Schema Document Identity Requirements
+- `spc:json-schema-payload-validation-requirements` - JSON Schema Payload Validation Requirements
+- `spc:json-schema-contract-versioning-requirements` - JSON Schema Contract Versioning Requirements
+- `spc:openlineage-run-event-requirements` - OpenLineage Run Event Requirements
+- `spc:openlineage-dataset-facet-requirements` - OpenLineage Dataset Facet Requirements
+- `spc:cloudevents-core-attribute-requirements` - CloudEvents Core Attribute Requirements
+- `spc:cloudevents-json-http-binding-requirements` - CloudEvents JSON HTTP Binding Requirements
+- `spc:ga4-bigquery-export-event-schema-requirements` - GA4 BigQuery Export Event Schema Requirements
+- `spc:analytics-export-reconciliation-requirements` - Analytics Export Reconciliation Requirements
+- `spc:data-contract-lineage-audit-evidence-requirements` - Data Contract Lineage Audit Evidence Requirements
 
 ## Install With uv
 

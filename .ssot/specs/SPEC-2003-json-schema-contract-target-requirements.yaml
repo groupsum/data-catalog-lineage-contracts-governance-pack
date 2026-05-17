@@ -1,0 +1,24 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2003"
+number: 2003
+slug: "json-schema-contract-target-requirements"
+title: "JSON Schema Contract Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "JSON Schema targets must be curated as schema identity, validation, required field, type, constraint, compatibility, deprecation, migration, and versioned reference surfaces. Source curation must preserve the selected JSON Schema dialect and keep schema contract targets separate from catalog and lineage targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Requirements
+  
+  JSON Schema targets must be curated as schema identity, validation, required field, type, constraint, compatibility, deprecation, migration, and versioned reference surfaces. Source curation must preserve the selected JSON Schema dialect and keep schema contract targets separate from catalog and lineage targets.
+  
+  ## Evidence
+  
+  The repository must map JSON Schema targets to downstream templates that require schema snapshots, accepted and rejected fixture outputs, compatibility reports, and migration evidence.
+spec_kind: "governance"

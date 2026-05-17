@@ -1,0 +1,24 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2004"
+number: 2004
+slug: "openlineage-processing-target-requirements"
+title: "OpenLineage Processing Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "OpenLineage targets must be curated as run event, job, run, input dataset, output dataset, dataset facet, run facet, producer, schema URL, event time, and custom facet surfaces. Source curation must keep lineage event targets separate from catalog metadata and schema validation targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Requirements
+  
+  OpenLineage targets must be curated as run event, job, run, input dataset, output dataset, dataset facet, run facet, producer, schema URL, event time, and custom facet surfaces. Source curation must keep lineage event targets separate from catalog metadata and schema validation targets.
+  
+  ## Evidence
+  
+  The repository must retain target metadata that justifies downstream templates for run event validation, dataset facet validation, input/output lineage, and processing evidence.
+spec_kind: "governance"

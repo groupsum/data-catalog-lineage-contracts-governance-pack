@@ -1,0 +1,34 @@
+{
+  "id": "spc:cloudevents-core-attribute-requirements",
+  "number": 2008,
+  "slug": "cloudevents-core-attribute-requirements",
+  "title": "CloudEvents Core Attribute Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream CloudEvents core attributes for analytics event envelopes.",
+    "excludes": [
+      "Business event taxonomy",
+      "Warehouse export schemas",
+      "Non-event dataset catalog metadata"
+    ]
+  },
+  "authority_sources": [
+    "CloudEvents core specification"
+  ],
+  "requirements": [
+    "Validate id, source, specversion, type, time, subject, data content type, data schema, and selected extension attributes.",
+    "Reject, quarantine, or flag events with missing or invalid required CloudEvents attributes.",
+    "Retain event envelope fixtures and validation reports."
+  ],
+  "verification": [
+    "CloudEvents core attribute validation tests",
+    "missing required attribute failure-path tests",
+    "extension attribute handling tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:cloudevents-analytics-envelope-policy"
+  ]
+}
