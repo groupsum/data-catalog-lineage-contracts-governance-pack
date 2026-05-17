@@ -27,8 +27,14 @@ Data Catalog, Lineage, And Analytics Contracts
 
 ## Included ADRs
 
-- `adr:data-catalog-lineage-boundary` - Data Catalog Lineage Boundary
-- `adr:analytics-contract-evidence-lineage` - Analytics Contract Evidence Lineage
+- `adr:dcat-dataset-catalog-metadata-policy` - DCAT Dataset Catalog Metadata Policy
+- `adr:json-schema-analytics-contract-policy` - JSON Schema Analytics Contract Policy
+- `adr:json-schema-compatibility-and-versioning-policy` - JSON Schema Compatibility And Versioning Policy
+- `adr:openlineage-job-run-lineage-policy` - OpenLineage Job Run Lineage Policy
+- `adr:cloudevents-analytics-envelope-policy` - CloudEvents Analytics Envelope Policy
+- `adr:ga4-bigquery-export-schema-policy` - GA4 BigQuery Export Schema Policy
+- `adr:analytics-export-evidence-lineage-policy` - Analytics Export Evidence Lineage Policy
+- `adr:data-contract-audit-evidence-policy` - Data Contract Audit Evidence Policy
 
 ## Included SPECs
 

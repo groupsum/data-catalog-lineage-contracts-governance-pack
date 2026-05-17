@@ -1,0 +1,35 @@
+{
+  "id": "adr:dcat-dataset-catalog-metadata-policy",
+  "number": 1001,
+  "slug": "dcat-dataset-catalog-metadata-policy",
+  "title": "DCAT Dataset Catalog Metadata Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream dataset catalog metadata for datasets, distributions, data services, rights, and contacts.",
+    "excludes": [
+      "Payload validation schema internals",
+      "Pipeline execution orchestration",
+      "Customer identity profile modeling"
+    ]
+  },
+  "authority_sources": [
+    "W3C DCAT v3"
+  ],
+  "decision": [
+    "Use DCAT as the canonical catalog vocabulary for governed dataset metadata selected by the downstream repository.",
+    "Represent datasets, distributions, data services, access metadata, rights, contact points, themes, and descriptive metadata where relevant.",
+    "Retain catalog records and source snapshots as evidence for dataset inventory claims."
+  ],
+  "conformance_targets": [
+    "dataset metadata",
+    "distribution metadata",
+    "data service and rights metadata"
+  ],
+  "evidence_expectations": [
+    "DCAT source snapshots",
+    "catalog records",
+    "metadata validation reports"
+  ]
+}

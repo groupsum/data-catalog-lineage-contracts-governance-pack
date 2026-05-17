@@ -1,0 +1,23 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1005"
+number: 1005
+slug: "cloudevents-and-ga4-export-source-selection"
+title: "CloudEvents And GA4 Export Source Selection"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Analytics systems may need interoperable event envelopes and export-schema evidence for vendor event exports such as GA4 BigQuery exports."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Analytics systems may need interoperable event envelopes and export-schema evidence for vendor event exports such as GA4 BigQuery exports.
+  
+  ## Decision
+  
+  CloudEvents core, JSON format, and HTTP binding are selected as canonical authority sources for interoperable event envelope targets. GA4 BigQuery Export schema is selected as a vendor schema authority source for governed GA4 export table and field targets.

@@ -1,0 +1,35 @@
+{
+  "id": "adr:json-schema-compatibility-and-versioning-policy",
+  "number": 1003,
+  "slug": "json-schema-compatibility-and-versioning-policy",
+  "title": "JSON Schema Compatibility And Versioning Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream compatibility, versioning, deprecation, and migration treatment for JSON Schema analytics contracts.",
+    "excludes": [
+      "Data pipeline scheduling",
+      "Catalog ownership workflow",
+      "Non-JSON contract languages unless selected downstream"
+    ]
+  },
+  "authority_sources": [
+    "JSON Schema 2020-12"
+  ],
+  "decision": [
+    "Define schema versioning and compatibility rules before analytics contracts are used for production validation.",
+    "Represent deprecations, breaking changes, migration notes, and versioned references explicitly.",
+    "Retain compatibility checks and migration evidence for schema evolution claims."
+  ],
+  "conformance_targets": [
+    "schema versioning",
+    "compatibility assessment",
+    "deprecation and migration evidence"
+  ],
+  "evidence_expectations": [
+    "versioned schema snapshots",
+    "compatibility reports",
+    "migration notes"
+  ]
+}

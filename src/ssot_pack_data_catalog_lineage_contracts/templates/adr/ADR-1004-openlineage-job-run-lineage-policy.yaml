@@ -1,0 +1,35 @@
+{
+  "id": "adr:openlineage-job-run-lineage-policy",
+  "number": 1004,
+  "slug": "openlineage-job-run-lineage-policy",
+  "title": "OpenLineage Job Run Lineage Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream capture of processing lineage for jobs, runs, inputs, outputs, and facets.",
+    "excludes": [
+      "Catalog descriptive metadata except when linked to lineage datasets",
+      "Pipeline scheduler implementation",
+      "Business metric semantic definitions"
+    ]
+  },
+  "authority_sources": [
+    "OpenLineage specification"
+  ],
+  "decision": [
+    "Use OpenLineage as the canonical structure for governed processing lineage events selected by the downstream repository.",
+    "Capture job, run, input dataset, output dataset, event time, producer, and facet metadata needed to trace analytics processing.",
+    "Retain lineage events as evidence for processing and export claims."
+  ],
+  "conformance_targets": [
+    "OpenLineage run events",
+    "job and run metadata",
+    "input/output dataset lineage"
+  ],
+  "evidence_expectations": [
+    "lineage event fixtures",
+    "lineage validation reports",
+    "processing run evidence"
+  ]
+}

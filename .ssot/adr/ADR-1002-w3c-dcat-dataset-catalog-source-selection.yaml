@@ -1,0 +1,23 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1002"
+number: 1002
+slug: "w3c-dcat-dataset-catalog-source-selection"
+title: "W3C DCAT Dataset Catalog Source Selection"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Governed analytics datasets need catalog metadata that can describe datasets, distributions, data services, rights, contact points, and provenance metadata."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Governed analytics datasets need catalog metadata that can describe datasets, distributions, data services, rights, contact points, and provenance metadata.
+  
+  ## Decision
+  
+  W3C DCAT v3 is selected as the canonical authority source for dataset catalog and distribution metadata targets. The repository must curate DCAT targets separately from schema contract and processing lineage targets.

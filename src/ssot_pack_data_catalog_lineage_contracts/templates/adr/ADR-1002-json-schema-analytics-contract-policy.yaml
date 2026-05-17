@@ -1,0 +1,35 @@
+{
+  "id": "adr:json-schema-analytics-contract-policy",
+  "number": 1002,
+  "slug": "json-schema-analytics-contract-policy",
+  "title": "JSON Schema Analytics Contract Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream analytics payload and export contracts represented with JSON Schema.",
+    "excludes": [
+      "Catalog descriptive metadata",
+      "Runtime lineage event capture",
+      "Dashboard layout or visualization rules"
+    ]
+  },
+  "authority_sources": [
+    "JSON Schema 2020-12"
+  ],
+  "decision": [
+    "Use JSON Schema 2020-12 as the contract language for governed analytics payloads and exports selected by the downstream repository.",
+    "Require canonical schema identity, version references, required fields, type constraints, and validation failure handling.",
+    "Retain schema snapshots and validation outputs as evidence for contract conformance claims."
+  ],
+  "conformance_targets": [
+    "schema identity",
+    "payload validation",
+    "schema validation evidence"
+  ],
+  "evidence_expectations": [
+    "schema snapshots",
+    "validation reports",
+    "accepted and rejected payload fixtures"
+  ]
+}

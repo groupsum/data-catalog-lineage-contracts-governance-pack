@@ -1,0 +1,25 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1001"
+number: 1001
+slug: "data-catalog-lineage-source-boundary"
+title: "Data Catalog Lineage Source Boundary"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "This repository curates authority sources for data catalog metadata, analytics schemas, dataset lineage, event envelopes, export schemas, and evidence traceability."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  This repository curates authority sources for data catalog metadata, analytics schemas, dataset lineage, event envelopes, export schemas, and evidence traceability.
+  
+  ## Decision
+  
+  The pack authority boundary is limited to data catalog, lineage, event envelope, analytics contract, and export schema targets. Canonical sources include W3C DCAT v3, JSON Schema 2020-12, OpenLineage, CloudEvents, and GA4 BigQuery Export schema.
+  
+  The boundary excludes product analytics collection APIs, customer identity schemas, consent records, advertising measurement standards, and governance-pack mechanics unless those sources are used only as context for catalog, lineage, schema, or export evidence targets.

@@ -1,0 +1,37 @@
+{
+  "id": "adr:cloudevents-analytics-envelope-policy",
+  "number": 1005,
+  "slug": "cloudevents-analytics-envelope-policy",
+  "title": "CloudEvents Analytics Envelope Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream use of CloudEvents attributes and envelopes for analytics event routing and interoperability.",
+    "excludes": [
+      "Business event taxonomy",
+      "Warehouse export schemas",
+      "Non-event dataset catalog metadata"
+    ]
+  },
+  "authority_sources": [
+    "CloudEvents core specification",
+    "CloudEvents JSON event format",
+    "CloudEvents HTTP protocol binding"
+  ],
+  "decision": [
+    "Use CloudEvents attributes and formats when downstream analytics events require a neutral interoperable event envelope.",
+    "Validate required attributes, JSON event representation, and HTTP structured or binary transport mode where used.",
+    "Retain envelope validation outputs and event fixtures as evidence."
+  ],
+  "conformance_targets": [
+    "CloudEvents core attributes",
+    "CloudEvents JSON format",
+    "CloudEvents HTTP binding"
+  ],
+  "evidence_expectations": [
+    "CloudEvents fixtures",
+    "envelope validation reports",
+    "HTTP binding examples"
+  ]
+}

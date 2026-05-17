@@ -1,0 +1,39 @@
+{
+  "id": "adr:data-contract-audit-evidence-policy",
+  "number": 1008,
+  "slug": "data-contract-audit-evidence-policy",
+  "title": "Data Contract Audit Evidence Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream audit evidence for data catalog metadata, schema contracts, event envelopes, lineage events, export samples, and validation reports.",
+    "excludes": [
+      "Non-data-contract operational logs",
+      "Customer identity evidence",
+      "Financial audit evidence unless selected downstream"
+    ]
+  },
+  "authority_sources": [
+    "W3C DCAT v3",
+    "JSON Schema 2020-12",
+    "OpenLineage specification",
+    "CloudEvents",
+    "GA4 BigQuery Export schema"
+  ],
+  "decision": [
+    "Retain schema snapshots, catalog records, lineage events, event envelope fixtures, export samples, validation reports, reconciliation reports, and content hashes.",
+    "Link evidence artifacts to the catalog, schema, lineage, envelope, export, validation, and claim they substantiate.",
+    "Preserve evidence immutability or content hashes for audit-sensitive artifacts."
+  ],
+  "conformance_targets": [
+    "audit evidence inventory",
+    "evidence linkage",
+    "content hash retention"
+  ],
+  "evidence_expectations": [
+    "source snapshots",
+    "validation reports",
+    "content hashes and audit reports"
+  ]
+}

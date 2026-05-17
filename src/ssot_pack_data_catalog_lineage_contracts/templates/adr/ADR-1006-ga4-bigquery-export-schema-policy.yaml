@@ -1,0 +1,35 @@
+{
+  "id": "adr:ga4-bigquery-export-schema-policy",
+  "number": 1006,
+  "slug": "ga4-bigquery-export-schema-policy",
+  "title": "GA4 BigQuery Export Schema Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream treatment of GA4 BigQuery export tables and fields as governed export schema contracts.",
+    "excludes": [
+      "GA4 collection tag configuration",
+      "Non-GA4 warehouse schemas",
+      "Marketing attribution model selection"
+    ]
+  },
+  "authority_sources": [
+    "GA4 BigQuery Export schema"
+  ],
+  "decision": [
+    "Treat GA4 BigQuery export schema documentation as the authority for governed GA4 export table and field validation where GA4 exports are selected.",
+    "Represent event records, event parameters, user properties, ecommerce fields, and table/date structure explicitly.",
+    "Retain export samples and validation outputs as evidence for GA4 export conformance claims."
+  ],
+  "conformance_targets": [
+    "GA4 export event schema",
+    "event parameter and user property fields",
+    "export table/date structure"
+  ],
+  "evidence_expectations": [
+    "GA4 export samples",
+    "schema validation reports",
+    "field mapping records"
+  ]
+}

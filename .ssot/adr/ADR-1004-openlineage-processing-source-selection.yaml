@@ -1,0 +1,23 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1004"
+number: 1004
+slug: "openlineage-processing-source-selection"
+title: "OpenLineage Processing Source Selection"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Governed analytics processing needs lineage evidence for jobs, runs, input datasets, output datasets, facets, and run events."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Governed analytics processing needs lineage evidence for jobs, runs, input datasets, output datasets, facets, and run events.
+  
+  ## Decision
+  
+  OpenLineage is selected as the canonical authority source for processing and job lineage targets. The repository must curate OpenLineage run events, jobs, runs, inputs, outputs, datasets, and facets separately from catalog metadata and schema validation targets.

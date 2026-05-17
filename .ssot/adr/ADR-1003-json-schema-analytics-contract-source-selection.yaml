@@ -1,0 +1,23 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1003"
+number: 1003
+slug: "json-schema-analytics-contract-source-selection"
+title: "JSON Schema Analytics Contract Source Selection"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Analytics payloads and exports need machine-checkable schema contracts that define payload identity, required properties, types, constraints, compatibility, and versioning."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Analytics payloads and exports need machine-checkable schema contracts that define payload identity, required properties, types, constraints, compatibility, and versioning.
+  
+  ## Decision
+  
+  JSON Schema 2020-12 is selected as the canonical authority source for analytics payload and export schema contract targets. The repository must curate schema identity, validation, compatibility, and versioning surfaces separately from catalog metadata and runtime lineage targets.

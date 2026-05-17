@@ -1,0 +1,38 @@
+{
+  "id": "adr:analytics-export-evidence-lineage-policy",
+  "number": 1007,
+  "slug": "analytics-export-evidence-lineage-policy",
+  "title": "Analytics Export Evidence Lineage Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream reconciliation among export schemas, catalog metadata, validation results, lineage events, and evidence reports.",
+    "excludes": [
+      "Dashboard rendering",
+      "Campaign attribution logic",
+      "Consent or privacy signal transport"
+    ]
+  },
+  "authority_sources": [
+    "W3C DCAT v3",
+    "JSON Schema 2020-12",
+    "OpenLineage specification",
+    "GA4 BigQuery Export schema"
+  ],
+  "decision": [
+    "Define reconciliation keys among catalog records, schema contracts, exported rows, lineage events, and validation reports.",
+    "Retain enough evidence to trace an exported analytics record to its contract, catalog entry, and processing lineage where applicable.",
+    "Report reconciliation failures explicitly rather than silently publishing unverifiable exports."
+  ],
+  "conformance_targets": [
+    "export reconciliation",
+    "catalog-to-schema-to-lineage linkage",
+    "validation report evidence"
+  ],
+  "evidence_expectations": [
+    "reconciliation reports",
+    "lineage events",
+    "schema and catalog validation outputs"
+  ]
+}
