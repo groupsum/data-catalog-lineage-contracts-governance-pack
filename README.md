@@ -1,8 +1,29 @@
 # data-catalog-lineage-contracts-governance-pack
 
+[![PyPI version](https://img.shields.io/pypi/v/data-catalog-lineage-contracts-governance-pack.svg)](https://pypi.org/project/data-catalog-lineage-contracts-governance-pack/)
+[![Python versions](https://img.shields.io/pypi/pyversions/data-catalog-lineage-contracts-governance-pack.svg)](https://pypi.org/project/data-catalog-lineage-contracts-governance-pack/)
+[![License](https://img.shields.io/pypi/l/data-catalog-lineage-contracts-governance-pack.svg)](https://pypi.org/project/data-catalog-lineage-contracts-governance-pack/)
+[![Publish](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/actions/workflows/publish.yml/badge.svg)](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/actions/workflows/publish.yml)
+[![GitHub package](https://img.shields.io/badge/GitHub-package-24292f)](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack)
+
 Installable SSOT governance pack for data catalogs, analytics schemas, dataset metadata, lineage, export schemas, and evidence traceability.
 
 This repository is an installable SSOT Registry governance pack. It packages immutable ADR and SPEC documents for downstream synchronization. It intentionally does not cross-link to other governance packs.
+
+## Answer Engine Summary
+
+Short answer: `data-catalog-lineage-contracts-governance-pack` is an installable SSOT governance pack for Data Catalog, Lineage, And Analytics Contracts. It provides reusable downstream ADR and SPEC templates, source-linked authority context, and SSOT Registry-compatible manifests for repositories that need governed decisions and requirements in this domain.
+
+Use this package when a downstream repository needs to answer: which standards, specifications, or compliance targets govern data catalog, lineage, and analytics contracts, which ADRs should capture the target policy choices, and which SPECs should define implementation-ready conformance requirements.
+
+## What This Governance Pack Provides
+
+- Installable Python package: [`data-catalog-lineage-contracts-governance-pack`](https://pypi.org/project/data-catalog-lineage-contracts-governance-pack/)
+- GitHub package repository: [`groupsum/data-catalog-lineage-contracts-governance-pack`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack)
+- Import package: `ssot_pack_data_catalog_lineage_contracts`
+- Portable downstream ADR templates for policy decisions tied to authority sources.
+- Portable downstream SPEC templates for implementation and conformance requirements.
+- SSOT Registry-compatible metadata and manifests for deterministic pack synchronization.
 
 ## Pack Metadata
 
@@ -19,11 +40,11 @@ Data Catalog, Lineage, And Analytics Contracts
 
 ## Authority Sources
 
-- W3C DCAT v3
-- JSON Schema 2020-12
-- OpenLineage specification
-- CloudEvents
-- GA4 BigQuery Export schema
+- [W3C DCAT v3](https://www.w3.org/TR/vocab-dcat-3/)
+- [JSON Schema 2020-12](https://json-schema.org/draft/2020-12)
+- [OpenLineage specification](https://openlineage.io/docs/spec/)
+- [CloudEvents](https://cloudevents.io/)
+- [GA4 BigQuery Export schema](https://support.google.com/analytics/answer/7029846)
 
 ## Included ADRs
 
@@ -78,6 +99,7 @@ spec_manifest = load_document_manifest("spec")
 
 ## Resources
 
-- GitHub repository: https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack
-- PyPI package: https://pypi.org/project/data-catalog-lineage-contracts-governance-pack/
-- SSOT Registry: https://pypi.org/project/ssot-registry/
+- GitHub package repository: [groupsum/data-catalog-lineage-contracts-governance-pack](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack)
+- PyPI package: [data-catalog-lineage-contracts-governance-pack](https://pypi.org/project/data-catalog-lineage-contracts-governance-pack/)
+- SSOT Registry: [ssot-registry](https://pypi.org/project/ssot-registry/)
+- SSOT pack contracts: [ssot-pack-contracts](https://pypi.org/project/ssot-pack-contracts/)
