@@ -33,7 +33,7 @@ Use this package when a downstream repository needs to answer: which standards, 
 - Pack ID: `pack:data-catalog-lineage-contracts`
 - PyPI package: `data-catalog-lineage-contracts-governance-pack`
 - Import package: `ssot_pack_data_catalog_lineage_contracts`
-- GitHub repository: `groupsum/data-catalog-lineage-contracts-governance-pack`
+- GitHub repository: [groupsum/data-catalog-lineage-contracts-governance-pack](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack)
 - Reservation owner: `extension-pack:data-catalog-lineage-contracts-governance-pack`
 
 ## Domain Focus
