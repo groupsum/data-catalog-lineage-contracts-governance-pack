@@ -1,10 +1,13 @@
+<div align="center">
+
 # data-catalog-lineage-contracts-governance-pack
 
 [![PyPI version](https://img.shields.io/pypi/v/data-catalog-lineage-contracts-governance-pack.svg)](https://pypi.org/project/data-catalog-lineage-contracts-governance-pack/)
 [![Python versions](https://img.shields.io/pypi/pyversions/data-catalog-lineage-contracts-governance-pack.svg)](https://pypi.org/project/data-catalog-lineage-contracts-governance-pack/)
 [![License](https://img.shields.io/pypi/l/data-catalog-lineage-contracts-governance-pack.svg)](https://pypi.org/project/data-catalog-lineage-contracts-governance-pack/)
 [![Publish](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/actions/workflows/publish.yml/badge.svg)](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/actions/workflows/publish.yml)
-[![GitHub package](https://img.shields.io/badge/GitHub-package-24292f)](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack)
+
+</div>
 
 Installable SSOT governance pack for data catalogs, analytics schemas, dataset metadata, lineage, export schemas, and evidence traceability.
 
