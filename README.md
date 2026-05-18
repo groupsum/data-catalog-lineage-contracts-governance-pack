@@ -28,7 +28,6 @@ Use this package when a downstream repository needs to answer: which standards, 
 ## Pack Metadata
 
 - Pack ID: `pack:data-catalog-lineage-contracts`
-- Priority: `P2.3`
 - PyPI package: `data-catalog-lineage-contracts-governance-pack`
 - Import package: `ssot_pack_data_catalog_lineage_contracts`
 - GitHub repository: `groupsum/data-catalog-lineage-contracts-governance-pack`
