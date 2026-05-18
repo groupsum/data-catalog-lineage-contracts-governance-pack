@@ -47,29 +47,29 @@ Data Catalog, Lineage, And Analytics Contracts
 
 ## Included ADRs
 
-- `adr:dcat-dataset-catalog-metadata-policy` - DCAT Dataset Catalog Metadata Policy
-- `adr:json-schema-analytics-contract-policy` - JSON Schema Analytics Contract Policy
-- `adr:json-schema-compatibility-and-versioning-policy` - JSON Schema Compatibility And Versioning Policy
-- `adr:openlineage-job-run-lineage-policy` - OpenLineage Job Run Lineage Policy
-- `adr:cloudevents-analytics-envelope-policy` - CloudEvents Analytics Envelope Policy
-- `adr:ga4-bigquery-export-schema-policy` - GA4 BigQuery Export Schema Policy
-- `adr:analytics-export-evidence-lineage-policy` - Analytics Export Evidence Lineage Policy
-- `adr:data-contract-audit-evidence-policy` - Data Contract Audit Evidence Policy
+- [`adr:dcat-dataset-catalog-metadata-policy`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/adr/ADR-1001-dcat-dataset-catalog-metadata-policy.yaml) - DCAT Dataset Catalog Metadata Policy
+- [`adr:json-schema-analytics-contract-policy`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/adr/ADR-1002-json-schema-analytics-contract-policy.yaml) - JSON Schema Analytics Contract Policy
+- [`adr:json-schema-compatibility-and-versioning-policy`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/adr/ADR-1003-json-schema-compatibility-and-versioning-policy.yaml) - JSON Schema Compatibility And Versioning Policy
+- [`adr:openlineage-job-run-lineage-policy`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/adr/ADR-1004-openlineage-job-run-lineage-policy.yaml) - OpenLineage Job Run Lineage Policy
+- [`adr:cloudevents-analytics-envelope-policy`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/adr/ADR-1005-cloudevents-analytics-envelope-policy.yaml) - CloudEvents Analytics Envelope Policy
+- [`adr:ga4-bigquery-export-schema-policy`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/adr/ADR-1006-ga4-bigquery-export-schema-policy.yaml) - GA4 BigQuery Export Schema Policy
+- [`adr:analytics-export-evidence-lineage-policy`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/adr/ADR-1007-analytics-export-evidence-lineage-policy.yaml) - Analytics Export Evidence Lineage Policy
+- [`adr:data-contract-audit-evidence-policy`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/adr/ADR-1008-data-contract-audit-evidence-policy.yaml) - Data Contract Audit Evidence Policy
 
 ## Included SPECs
 
-- `spc:dcat-dataset-metadata-requirements` - DCAT Dataset Metadata Requirements
-- `spc:dcat-distribution-and-data-service-requirements` - DCAT Distribution And Data Service Requirements
-- `spc:json-schema-document-identity-requirements` - JSON Schema Document Identity Requirements
-- `spc:json-schema-payload-validation-requirements` - JSON Schema Payload Validation Requirements
-- `spc:json-schema-contract-versioning-requirements` - JSON Schema Contract Versioning Requirements
-- `spc:openlineage-run-event-requirements` - OpenLineage Run Event Requirements
-- `spc:openlineage-dataset-facet-requirements` - OpenLineage Dataset Facet Requirements
-- `spc:cloudevents-core-attribute-requirements` - CloudEvents Core Attribute Requirements
-- `spc:cloudevents-json-http-binding-requirements` - CloudEvents JSON HTTP Binding Requirements
-- `spc:ga4-bigquery-export-event-schema-requirements` - GA4 BigQuery Export Event Schema Requirements
-- `spc:analytics-export-reconciliation-requirements` - Analytics Export Reconciliation Requirements
-- `spc:data-contract-lineage-audit-evidence-requirements` - Data Contract Lineage Audit Evidence Requirements
+- [`spc:dcat-dataset-metadata-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2001-dcat-dataset-metadata-requirements.yaml) - DCAT Dataset Metadata Requirements
+- [`spc:dcat-distribution-and-data-service-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2002-dcat-distribution-and-data-service-requirements.yaml) - DCAT Distribution And Data Service Requirements
+- [`spc:json-schema-document-identity-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2003-json-schema-document-identity-requirements.yaml) - JSON Schema Document Identity Requirements
+- [`spc:json-schema-payload-validation-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2004-json-schema-payload-validation-requirements.yaml) - JSON Schema Payload Validation Requirements
+- [`spc:json-schema-contract-versioning-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2005-json-schema-contract-versioning-requirements.yaml) - JSON Schema Contract Versioning Requirements
+- [`spc:openlineage-run-event-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2006-openlineage-run-event-requirements.yaml) - OpenLineage Run Event Requirements
+- [`spc:openlineage-dataset-facet-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2007-openlineage-dataset-facet-requirements.yaml) - OpenLineage Dataset Facet Requirements
+- [`spc:cloudevents-core-attribute-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2008-cloudevents-core-attribute-requirements.yaml) - CloudEvents Core Attribute Requirements
+- [`spc:cloudevents-json-http-binding-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2009-cloudevents-json-http-binding-requirements.yaml) - CloudEvents JSON HTTP Binding Requirements
+- [`spc:ga4-bigquery-export-event-schema-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2010-ga4-bigquery-export-event-schema-requirements.yaml) - GA4 BigQuery Export Event Schema Requirements
+- [`spc:analytics-export-reconciliation-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2011-analytics-export-reconciliation-requirements.yaml) - Analytics Export Reconciliation Requirements
+- [`spc:data-contract-lineage-audit-evidence-requirements`](https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack/blob/master/src/ssot_pack_data_catalog_lineage_contracts/templates/specs/SPEC-2012-data-contract-lineage-audit-evidence-requirements.yaml) - Data Contract Lineage Audit Evidence Requirements
 
 ## Install With uv
 
