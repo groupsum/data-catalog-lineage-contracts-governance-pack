@@ -1,4 +1,4 @@
-# ssot-pack-data-catalog-lineage-contracts
+# data-catalog-lineage-contracts-governance-pack
 
 Installable SSOT governance pack for data catalogs, analytics schemas, dataset metadata, lineage, export schemas, and evidence traceability.
 
@@ -8,10 +8,10 @@ This repository is an installable SSOT Registry governance pack. It packages imm
 
 - Pack ID: `pack:data-catalog-lineage-contracts`
 - Priority: `P2.3`
-- PyPI package: `ssot-pack-data-catalog-lineage-contracts`
+- PyPI package: `data-catalog-lineage-contracts-governance-pack`
 - Import package: `ssot_pack_data_catalog_lineage_contracts`
 - GitHub repository: `groupsum/data-catalog-lineage-contracts-governance-pack`
-- Reservation owner: `extension-pack:ssot-pack-data-catalog-lineage-contracts`
+- Reservation owner: `extension-pack:data-catalog-lineage-contracts-governance-pack`
 
 ## Domain Focus
 
@@ -54,15 +54,15 @@ Data Catalog, Lineage, And Analytics Contracts
 ## Install With uv
 
 ```bash
-uv add ssot-pack-data-catalog-lineage-contracts
-uv add ssot-registry ssot-pack-data-catalog-lineage-contracts
+uv add data-catalog-lineage-contracts-governance-pack
+uv add ssot-registry data-catalog-lineage-contracts-governance-pack
 ```
 
 ## Use With The SSOT Registry CLI
 
 ```bash
-uvx --from ssot-registry ssot pack install ssot-pack-data-catalog-lineage-contracts
-uvx --from ssot-registry ssot pack sync . ssot-pack-data-catalog-lineage-contracts
+uvx --from ssot-registry ssot pack install data-catalog-lineage-contracts-governance-pack
+uvx --from ssot-registry ssot pack sync . data-catalog-lineage-contracts-governance-pack
 uv run ssot adr list .
 uv run ssot spec list .
 ```
@@ -79,5 +79,5 @@ spec_manifest = load_document_manifest("spec")
 ## Resources
 
 - GitHub repository: https://github.com/groupsum/data-catalog-lineage-contracts-governance-pack
-- PyPI package: https://pypi.org/project/ssot-pack-data-catalog-lineage-contracts/
+- PyPI package: https://pypi.org/project/data-catalog-lineage-contracts-governance-pack/
 - SSOT Registry: https://pypi.org/project/ssot-registry/

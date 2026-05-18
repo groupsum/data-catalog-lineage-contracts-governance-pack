@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "ssot_package_name": "ssot-pack-data-catalog-lineage-contracts",
+  "ssot_package_name": "data-catalog-lineage-contracts-governance-pack",
   "origin": {
     "id": "pack:data-catalog-lineage-contracts",
-    "package_name": "ssot-pack-data-catalog-lineage-contracts",
+    "package_name": "data-catalog-lineage-contracts-governance-pack",
     "import_name": "ssot_pack_data_catalog_lineage_contracts",
     "kind": "governance-pack",
     "title": "Data Catalog, Lineage, And Analytics Contracts",
@@ -19,7 +19,7 @@
   "trust": {
     "trusted_by_default": false,
     "origin": "extension-pack",
-    "reservation_owner": "extension-pack:ssot-pack-data-catalog-lineage-contracts"
+    "reservation_owner": "extension-pack:data-catalog-lineage-contracts-governance-pack"
   },
   "documents": {
     "adr": {
