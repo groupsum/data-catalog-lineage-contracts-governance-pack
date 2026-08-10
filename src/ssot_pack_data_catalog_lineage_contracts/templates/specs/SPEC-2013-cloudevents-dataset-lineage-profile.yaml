@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:cloudevents-dataset-lineage-profile",
+  "number": 2013,
+  "slug": "cloudevents-dataset-lineage-profile",
+  "title": "Cloudevents Dataset Lineage Profile",
+  "status": "accepted",
+  "summary": "Defines lineage for datasets transported in canonical CloudEvents envelopes.",
+  "body": "## Requirements\n\n- Reference the canonical CloudEvents schema version.\n- Link event source and type to catalog datasets and lineage runs.\n- Preserve envelope identity in lineage evidence.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://cloudevents.io/"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "cloudevents",
+    "dataset",
+    "lineage",
+    "profile"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:catalog-lineage-profiles-reference-canonical-envelope-and-vendor-schemas"
+  ]
+}

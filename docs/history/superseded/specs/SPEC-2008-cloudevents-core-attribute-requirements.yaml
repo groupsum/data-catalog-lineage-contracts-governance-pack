@@ -3,9 +3,11 @@
   "number": 2008,
   "slug": "cloudevents-core-attribute-requirements",
   "title": "CloudEvents Core Attribute Requirements",
-  "status": "active",
+  "status": "superseded",
   "supersedes": [],
-  "superseded_by": [],
+  "superseded_by": [
+    "spc:cloudevents-core-envelope-requirements"
+  ],
   "scope": {
     "governs": "Downstream CloudEvents core attributes for analytics event envelopes.",
     "excludes": [
@@ -30,5 +32,11 @@
   "spec_kind": "governance",
   "adr_ids": [
     "adr:cloudevents-analytics-envelope-policy"
+  ],
+  "status_notes": [
+    {
+      "date": "2026-08-10",
+      "note": "Superseded by narrower canonical governance documents during the portfolio deduplication."
+    }
   ]
 }

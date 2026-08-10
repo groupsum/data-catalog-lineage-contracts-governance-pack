@@ -3,9 +3,11 @@
   "number": 1005,
   "slug": "cloudevents-analytics-envelope-policy",
   "title": "CloudEvents Analytics Envelope Policy",
-  "status": "accepted",
+  "status": "superseded",
   "supersedes": [],
-  "superseded_by": [],
+  "superseded_by": [
+    "adr:event-envelope-authority-policy"
+  ],
   "scope": {
     "governs": "Downstream use of CloudEvents attributes and envelopes for analytics event routing and interoperability.",
     "excludes": [
@@ -33,5 +35,11 @@
     "CloudEvents fixtures",
     "envelope validation reports",
     "HTTP binding examples"
+  ],
+  "status_notes": [
+    {
+      "date": "2026-08-10",
+      "note": "Superseded by narrower canonical governance documents during the portfolio deduplication."
+    }
   ]
 }

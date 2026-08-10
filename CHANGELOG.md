@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0.dev1
+
+- Removed duplicate CloudEvents and GA4 schema ownership; added lineage integration profiles.
+
 ## 0.1.1.dev1
 
 - Pending release notes.

@@ -3,9 +3,11 @@
   "number": 2010,
   "slug": "ga4-bigquery-export-event-schema-requirements",
   "title": "GA4 BigQuery Export Event Schema Requirements",
-  "status": "active",
+  "status": "superseded",
   "supersedes": [],
-  "superseded_by": [],
+  "superseded_by": [
+    "spc:ga4-bigquery-export-event-schema-requirements"
+  ],
   "scope": {
     "governs": "Downstream GA4 BigQuery export event tables, event records, event parameters, user properties, ecommerce fields, and date/table structure.",
     "excludes": [
@@ -30,5 +32,11 @@
   "spec_kind": "governance",
   "adr_ids": [
     "adr:ga4-bigquery-export-schema-policy"
+  ],
+  "status_notes": [
+    {
+      "date": "2026-08-10",
+      "note": "Superseded by narrower canonical governance documents during the portfolio deduplication."
+    }
   ]
 }

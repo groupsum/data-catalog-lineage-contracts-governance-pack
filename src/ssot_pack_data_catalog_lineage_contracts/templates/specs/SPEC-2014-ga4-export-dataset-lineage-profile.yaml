@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:ga4-export-dataset-lineage-profile",
+  "number": 2014,
+  "slug": "ga4-export-dataset-lineage-profile",
+  "title": "GA4 Export Dataset Lineage Profile",
+  "status": "accepted",
+  "summary": "Defines catalog and lineage behavior for GA4 BigQuery exports.",
+  "body": "## Requirements\n\n- Reference the canonical GA4 export schema version.\n- Catalog source tables, derived datasets, transformations, and freshness.\n- Reconcile exported event counts and lineage evidence.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://support.google.com/analytics/answer/7029846"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "ga4",
+    "export",
+    "dataset",
+    "lineage",
+    "profile"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:catalog-lineage-profiles-reference-canonical-envelope-and-vendor-schemas"
+  ]
+}

@@ -3,9 +3,11 @@
   "number": 1006,
   "slug": "ga4-bigquery-export-schema-policy",
   "title": "GA4 BigQuery Export Schema Policy",
-  "status": "accepted",
+  "status": "superseded",
   "supersedes": [],
-  "superseded_by": [],
+  "superseded_by": [
+    "adr:ga4-bigquery-export-evidence-policy"
+  ],
   "scope": {
     "governs": "Downstream treatment of GA4 BigQuery export tables and fields as governed export schema contracts.",
     "excludes": [
@@ -31,5 +33,11 @@
     "GA4 export samples",
     "schema validation reports",
     "field mapping records"
+  ],
+  "status_notes": [
+    {
+      "date": "2026-08-10",
+      "note": "Superseded by narrower canonical governance documents during the portfolio deduplication."
+    }
   ]
 }

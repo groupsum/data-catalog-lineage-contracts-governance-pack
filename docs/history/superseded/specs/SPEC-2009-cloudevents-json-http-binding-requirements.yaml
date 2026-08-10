@@ -3,9 +3,12 @@
   "number": 2009,
   "slug": "cloudevents-json-http-binding-requirements",
   "title": "CloudEvents JSON HTTP Binding Requirements",
-  "status": "active",
+  "status": "superseded",
   "supersedes": [],
-  "superseded_by": [],
+  "superseded_by": [
+    "spc:cloudevents-http-binding-requirements",
+    "spc:cloudevents-json-format-requirements"
+  ],
   "scope": {
     "governs": "Downstream CloudEvents JSON event format and HTTP structured, binary, or batched transport handling.",
     "excludes": [
@@ -31,5 +34,11 @@
   "spec_kind": "governance",
   "adr_ids": [
     "adr:cloudevents-analytics-envelope-policy"
+  ],
+  "status_notes": [
+    {
+      "date": "2026-08-10",
+      "note": "Superseded by narrower canonical governance documents during the portfolio deduplication."
+    }
   ]
 }

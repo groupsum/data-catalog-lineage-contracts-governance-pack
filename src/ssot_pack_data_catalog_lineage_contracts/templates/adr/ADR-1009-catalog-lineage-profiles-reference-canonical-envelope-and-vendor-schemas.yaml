@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "adr",
+  "id": "adr:catalog-lineage-profiles-reference-canonical-envelope-and-vendor-schemas",
+  "number": 1009,
+  "slug": "catalog-lineage-profiles-reference-canonical-envelope-and-vendor-schemas",
+  "title": "Catalog Lineage Profiles Reference Canonical Envelope And Vendor Schemas",
+  "status": "accepted",
+  "summary": "Catalog and lineage profiles reference canonical event envelopes and vendor schemas.",
+  "body": "Catalog governance owns dataset registration, contract versioning, lineage, reconciliation, and evidence. It does not redefine CloudEvents or GA4 schemas.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.w3.org/TR/vocab-dcat-3/",
+    "https://cloudevents.io/"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "catalog",
+    "lineage",
+    "profiles",
+    "reference",
+    "canonical",
+    "envelope",
+    "and",
+    "vendor"
+  ]
+}
