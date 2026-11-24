@@ -114,7 +114,7 @@
     "title": "Catalog Lineage Profiles Reference Canonical Envelope And Vendor Schemas",
     "filename": "ADR-1009-catalog-lineage-profiles-reference-canonical-envelope-and-vendor-schemas.yaml",
     "target_path": ".ssot/adr/ADR-1009-catalog-lineage-profiles-reference-canonical-envelope-and-vendor-schemas.yaml",
-    "sha256": "8c9836baa4e3cbbf3cc09a8de712c4ea6847611b2bbdde67f59c00bf5f0f3cb7",
+    "sha256": "32dfcebe25fc9a8f4907021420d10b6eddc4462841e0f89176330816d4c8c35a",
     "origin": "extension-pack",
     "reservation_owner": "extension-pack:data-catalog-lineage-contracts-governance-pack",
     "immutable": true,
